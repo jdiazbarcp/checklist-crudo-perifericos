@@ -308,30 +308,30 @@ details.pts li{margin:3px 0}
 
 <script>
 /* =====================================================================
-   CONFIGURACIÓN  ← (único bloque que hay que editar)
+   CONFIGURACIÓN
    ===================================================================== */
 const CONFIG = {
   // 1) Enlace PRECARGADO del Google Form (guía, paso 3). En cada pregunta del Form se escribe su "clave"
   //    (fecha, inicio, hora, turno, operador, semana, items_ok, items_obs, items_sb, hallazgos, estados,
   //    observaciones, id_registro) y se pega aquí el enlace que genera Google. Ejemplo:
   //    "https://docs.google.com/forms/d/e/1FAIpQLS.../viewform?usp=pp_url&entry.111=fecha&entry.222=inicio&..."
-  FORM_LINK_PRECARGADO: "",
+  FORM_LINK_PRECARGADO: "https://docs.google.com/forms/d/e/1FAIpQLScNFpG7RpzD7VWWHM24y46d4L8fUPg1vqKkpGznQbjQZ-V69g/viewform?usp=pp_url&entry.1013096664=fecha&entry.1548810239=inicio&entry.145981495=hora&entry.1848764103=turno&entry.1851607497=operador&entry.491002828=supervisor&entry.2014893786=semana&entry.1251579458=items_ok&entry.1502863026=items_obs&entry.656202228=items_sb&entry.1690006554=hallazgos&entry.281149961=estados&entry.1634916679=observaciones&entry.943968372=id_registro&entry.1517352712=checklist",
 
   // 2) (Opcional) enlace CSV publicado de la pestaña "Catalogo" para que los cambios en la hoja
   //    se reflejen solos en la app. Si se deja vacío se usa el catálogo incluido en este archivo.
   CATALOGO_CSV_URL: "",
 
-  // 3) Turnos disponibles (editar según la planta)
+  // 3) Turnos disponibles
   TURNOS: ["A", "B", "AA"],
 
-  // 4) "directo"    = la app envía los datos al Form sin abrirlo (recomendado)
-  //    "formulario" = plan B: abre el Form ya rellenado y el operador toca "Enviar"
+  // 4) "directo"
+  //    "formulario"
   MODO_ENVIO: "directo",
 
   TITULO: "CHECK LIST MOLINO DE CRUDO",
   SUBTITULO: "EQUIPOS PERIFÉRICOS",
 
-  // Datos propios de ESTE checklist (cada archivo HTML lleva los suyos)
+  // Datos propios de checklist
   NOMBRE_CHECKLIST: "Molino de crudo - Periféricos",   // texto que se guarda en la columna "Checklist" del Sheets
   PREFIJO_ID: "CDP",        // prefijo del ID de registro (separa los checklists en el Sheets)
   ID_APP: "mcr-perifericos",              // nombre interno: mantiene separados los borradores de cada checklist en el celular
